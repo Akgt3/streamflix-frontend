@@ -1,0 +1,230 @@
+@import "tailwindcss";
+html, body {
+  height: 100%;
+  margin: 0;
+  background: black;
+  scroll-behavior: smooth;
+  overscroll-behavior-y: auto;
+  
+}
+
+@keyframes libraryScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-library {
+  animation: libraryScroll 50s linear infinite;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+/* ================= PRELOADER ================= */
+.preloader {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* BRAND */
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  gap: 12px;
+  font-size: clamp(30px, 6vw, 46px);
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.logo-group {
+  display: flex;
+  gap: 4px;
+}
+
+.logo-group span {
+  opacity: 0;
+  transform: translateY(20px);
+  display: inline-block;
+}
+
+/* COLORS */
+.stream span {
+  color: #e50914;
+}
+
+.flix span {
+  color: #ffffff;
+}
+
+/* LINE */
+.line-track {
+  width: min(60vw, 260px);
+  height: 2px;
+  background: rgba(255, 255, 255, 0.15);
+  overflow: hidden;
+}
+
+.line {
+  width: 0%;
+  height: 100%;
+  background: #e50914;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overscroll-behavior-y: auto;
+  overscroll-behavior-x: none;
+}
+
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.35s ease-out;
+}
+
+
+
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+  .hover\\:scale-105:hover {
+    transform: none;
+  }
+}
+
+
+a.active span {
+  transform: scaleX(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= PERFORMANCE SAFE BACKGROUND ================= */
+
+.orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  opacity: 0.45;
+  will-change: transform;
+}
+
+/* ORB 1 */
+.orb-red-1 {
+  width: 22rem;
+  height: 22rem;
+  background: #dc2626;
+  top: -6rem;
+  left: -6rem;
+  animation: floatSlow 18s ease-in-out infinite;
+}
+
+/* ORB 2 */
+.orb-red-2 {
+  width: 26rem;
+  height: 26rem;
+  background: #ef4444;
+  bottom: -8rem;
+  right: -8rem;
+  animation: floatSlower 22s ease-in-out infinite;
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(80px, 100px, 0);
+  }
+}
+
+@keyframes floatSlower {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(-100px, -80px, 0);
+  }
+}
+
+/* VERY LIGHT NOISE */
+.noise {
+  position: absolute;
+  inset: 0;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* MOBILE SAFETY */
+@media (max-width: 480px) {
+  .orb {
+    animation: none;
+    filter: blur(60px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orb {
+    animation: none;
+  }
+}
