@@ -18,3 +18,7 @@ If you are developing a production application, we recommend using TypeScript wi
 ## Development Progress
 
 Day 2 - Continued development of the StreamFlix frontend and practiced Git workflow.
+
+## Development Progress
+
+Day 3 - Continued working on the StreamFlix frontend.
