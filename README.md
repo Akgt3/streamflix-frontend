@@ -24,3 +24,5 @@ Day 2 - Continued development of the StreamFlix frontend and practiced Git workf
 Day 3 - Continued working on the StreamFlix frontend.
 
 Day 4 - Continued development of StreamFlix frontend.
+
+Day 5 - Continued development of StreamFlix frontend.
