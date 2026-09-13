@@ -26,3 +26,5 @@ Day 3 - Continued working on the StreamFlix frontend.
 Day 4 - Continued development of StreamFlix frontend.
 
 Day 5 - Continued development of StreamFlix frontend.
+
+Day 6 - Continued development of StreamFlix frontend.
