@@ -35,4 +35,4 @@ Day 8 - Continued development of StreamFlix frontend.
 
 Day 9 - Continued development of StreamFlix frontend.
 
-Day 10 - Continued development of StreamFlix frontend.
+Day 10 - Continued development of StreamFlix frontend new .
