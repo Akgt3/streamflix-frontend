@@ -48,3 +48,7 @@ Day 13 - Continued development of StreamFlix frontend new .
 Day 14 - Continued development of StreamFlix frontend 
 
 Day 15 - Continued development of StreamFlix frontend 
+
+Day 16 - Continued development of StreamFlix frontend 
+
+Day 17 - Continued development of StreamFlix frontend 
